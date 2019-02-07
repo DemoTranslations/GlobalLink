@@ -1,4 +1,5 @@
 APPLICATION_OVERLAY_APPLICATIONS_APPLICATION_DISABLED: DÉSACTIVÉE
+APPLICATION_OVERLAY_APPLICATIONS_APPLICATION_SHORT: DE
 APPLICATION_OVERLAY_APPLICATION_LINK_LABEL: CHEMIN
 APPLICATION_OVERLAY_APPLICATION_LINK_UNKNOWN: INCONNU
 APPLICATION_OVERLAY_APPLICATION_LINK_ADD_BUTTON: + AJOUTER UN CHEMIN D'ACCÈS PERSONNALISÉ
@@ -11,7 +12,7 @@ APPLICATION_OVERLAY_APPLICATION_STATUS_ENABLED: ACTIVÉE
 APPLICATION_OVERLAY_APPLICATION_STATUS_DISABLED: DÉSACTIVÉE
 APPLICATION_OVERLAY_APPLICATION_STATUS_TEXT: "{INSTALLATION_STATUS} - {ENABLED_STATUS}
 APPLICATION_OVERLAY_APPLICATION_STATUS_TEXT_DESKTOP: Ce sont les paramètres utilisés lorsqu'aucune application n'est active.
-APPLICATION_OVERLAY_DELETE_CONFIRM_NOTIFICATION: Tous les profils et les macros seront inaccessibles pour cette application.Es-tu sûr?
+APPLICATION_OVERLAY_DELETE_CONFIRM_NOTIFICATION: Tous les profils et les macros seront inaccessibles pour cette application. Es-tu sûr?
 APPLICATION_OVERLAY_DISABLE_APPLICATION_BUTTON_ENABLE: ACTIVER L'APPLICATION
 APPLICATION_OVERLAY_DISABLE_APPLICATION_BUTTON_DISABLE: DÉSACTIVER L'APPLICATION
 APPLICATION_OVERLAY_PROFILE_DUPLICATE_COPY_NAME: "{PROFILE} copy
@@ -34,8 +35,8 @@ APPLET_OBS_DESCRIPTION: A {BRAND} G plugin pour le logiciel ouvert de radiodiffu
 APPLET_DOTA2_NAME: Intégration officielle
 APPLET_DOTA2_DESCRIPTION: Intégration officielle de {BRAND} G à Dota 2, affichant un éclairage dynamique sur les dispositifs {BRAND} G en fonction des événements du jeu.
 APPLET_CS_GO_NAME: Intégration officielle
-APPLET_CS_GO_DESCRIPTION: "Intégration officielle de {BRAND} G à Counter-Strike:Global Offensive, affichant un éclairage dynamique sur les dispositifs {BRAND} G en fonction des événements du jeu.
-APPLET_CS_GO_INSTALLATION_MESSAGE: 'Si l''installation automatique ne fonctionne pas, effectue une installation manuelle et sélectionne le répertoire d''installation de Counter-Strike:Répertoire d'installation global offensif.Il s''agit généralement de "Steam\steamapps\common\Counter-Strike Global Offensive".'
+APPLET_CS_GO_DESCRIPTION: "Intégration officielle de {BRAND} G à Counter-Strike: Global Offensive, affichant un éclairage dynamique sur les dispositifs {BRAND} G en fonction des événements du jeu.
+APPLET_CS_GO_INSTALLATION_MESSAGE: 'Si l''installation automatique ne fonctionne pas, effectue une installation manuelle et sélectionne le répertoire d''installation de Counter-Strike: Répertoire d'installation global offensif. Il s''agit généralement de "Steam\steamapps\common\Counter-Strike Global Offensive".'
 APPLET_ASSETTO_CORSA_NAME: Intégration officielle
 APPLET_ASSETTO_CORSA_DESCRIPTION: Intégration officielle de {BRAND} G à Assetto Corsa, affichant un éclairage dynamique sur les dispositifs {BRAND} G en fonction des événements du jeu.
 APPLET_DISCORD_NAME: Discord
