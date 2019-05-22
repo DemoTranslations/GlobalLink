@@ -1,0 +1,107 @@
+<? encoding= " UTF-8 " du version= " 1.0 " de xml ?>
+<! PUBLIC de concept de DOCTYPE « - //OASIS//DTD DITA Concept//EN » « concept.dtd »>
+<xml de " Q.I.-BOT-ha-DR-faisceau-vue d'ensemble " d'id= de concept : lang= " en-USA ">
+    <vue d'ensemble>/titre de configuration< de faisceau de titleHA>
+    <"> " <d'entreprise de keyref= de soutien pH de shortdescTo/> votre centre de calculs, configurent un faisceau d'ha.
+        Suivez vos méthodes et procédures de compagnie pour mettre en application votre faisceau du centre de calculs. </shortdesc>
+    <prolog>
+        <n'importe où> d'authorAutomation</auteur>
+        <type= " contribuant " bethany.kanui/author> d'auteur<>
+        <critdates>
+            <" créé du date= " 2019-02-19/>
+            <! -- Mettez à jour le critdate révisé pour des changements autres que des typos -->
+            <" révisé du modified= " 2019-02-19/>
+            <! --bethany.kanui-->
+            <modified= révisé " 2019/05/07 "/>
+            <! --bethany.kanui-->
+            <modified= révisé " 2019/05/08 "/>
+            <! --bethany.kanui-->
+            <modified= révisé " 2019/05/09 "/>
+            <! --bethany.kanui-->
+            <modified= révisé " 2019/05/13 "/>
+        </critdates>
+        <méta-données>
+            <mots-clés>
+                <indextermHAindextermprocesses/indexterm/indexterm><><><>
+                <indextermclusterindextermprocesses/indexterm/indexterm><><><>
+            </keywords>
+        </metadata>
+        <id= " Q.I.-BOT-ha-DR-faisceau-vue d'ensemble " /resourceid>< de resourceid>
+    </prolog>
+    <conbody>
+        <les faisceaux> de pHA protègent des services et
+            données en cas d'un échec de serveur ou de service. Ce qui suit est une liste de processus
+            lié aux faisceaux. <id= " ul_pxl_mgk_chb " d'UL>
+                <réplique><> synchrone<> du libDatabase replication/b-Configure entre
+                    emplacement primaire (actif) et serveurs (passifs) secondaires de MME. SQL d'emplacement à assurer
+                    uniformité en cas d'un échec de noeud de base de données. </li>
+                <la quantité><><> de libDowntime/b-The de temps d'arrêt dépend du nombre de tentatives de relancement
+                    l'administrateur configure pour les services primaires de serveur, le nombre de
+                    les failovers ont permis par nombre d'heures, et configuration. /li< de failback>
+                <libFailback/b-After><><> le serveur primaire est retourné à la normale, la charge de travail peut
+                    soyez échoué en arrière des serveurs secondaires aux serveurs primaires. Le primaire
+                    le serveur devient les opérations actives du serveur<> again.pRestoring au primaire
+                        système ou emplacement après un rétablissement de failover ou de désastre sur un système secondaire
+                        ou emplacement. </p/li><>
+                <libFailover/b-If><><> un des serveurs primaires échoue, la charge de travail du échoué
+                    le serveur décale automatiquement au serveur secondaire dans le faisceau. Ceci
+                    le processus automatique s'appelle le failover. Failover assure la disponibilité continue
+                    des applications et des données. Quand le failover accomplit, le serveur secondaire devient
+                    le serveur actif. <pWhen> le système (primaire) d'a détecte un défaut ou un échec, il
+                        transfère automatiquement la commande au système double (secondaire) d'a. Ceci
+                        s'applique aux faisceaux d'ha, à où le failover est d'un serveur
+                    des autres.< /p/li><>
+                <degradation/b-Process><> libGraceful<> permettant à des dépendances de faisceau de fonctionner
+                    avec élégance sur un emplacement primaire dégradé.< /li>
+                <les faisceaux><><> de libRedundancy/b-HA emploient la redondance pour empêcher de seuls points d'échec
+                    (SPOF), comme un serveur ou un service échoué. Les faisceaux d'ha incluent primaire (actif)
+                    serveurs qui services de centre serveur ou bases de données et serveurs (passifs) secondaires cela
+                    accueillez les copies repliées des services et des bases de données. </li>
+                <les serveurs><><> secondaires de libReplication/b-The ont la même configuration et
+                    logiciel comme serveurs primaires, ils sont une reproduction (copie superflue) de
+                    primaire. Des données sont repliées (copié) des serveurs primaires au secondaire
+                    serveurs. </li>
+            </ul/p><>
+        <le soutien> ha et DR de PTO " <" d'entreprise de pH de keyref=/>, configurent les composants choisis dedans
+            votre centre de calculs pour ha.< /p>
+        <id= " ul_tpw_t44_bhb " d'UL> 
+            <le faisceau><> du libCluster<> components/b-A est des serveurs d'un ensemble (noeuds) qui sont reliés près
+                câbles et logiciel physiques. Dans un environnement d'ha, ces faisceaux des serveurs sont
+                laissé être au même centre de calculs physique. <p>
+                    <noteIn> le contexte des faisceaux, cependant les limites serveur, centre serveur, et noeud chacun
+                        ayez la signification spécifique, ils sont fréquemment utilisé l'un pour l'autre.< /note>
+                <id=>< " ul_a4m_shs_xgb " de /pul>
+                    <groupe><> de libCluster (rôle)< /b-Group> des services groupés qui failover
+                        ensemble et dépendez de l'un l'autre. </li>
+                    <machine><><> de faisceau de libHost/b-The qui accueille les services.< /li>
+                    <limite><><> générique de libNode/b-A pour une machine dans un faisceau.< /li>
+                    <noeud><> actif<> libPrimary de node/b-The dans le faisceau. La machine où
+                        course d'activités de production. </li>
+                    <machine><> libSecondary<> de node/b-The qui est indiquée comme cible dans
+                        événement d'un failover. Le noeud secondaire est une reproduction passive de
+                        noeud primaire. </li>
+                    <machine><><> de libServer/b-The dans le faisceau installé avec l'opération de serveur
+                        système.< /li>
+                </ul/li><>
+            <commande><> de version de libResource (VCS ou SVN)< /b/li><>
+        </ul>
+        <les technologies> de faisceau de pHA gardent contre trois types spécifiques d'échecs : </p>
+        <id= " ul_ehy_dnj_xgb " d'UL>
+            <logiciel><> d'application de libApplication et<> de service failures/b-affecting et essentiel
+                services.< /li>
+            <échecs><> de libSite dans le multisite organizations/b-caused<> par des désastres normaux, puissance
+                pannes, ou pannes. /li< de connectivité>
+            <composants><> de matériel de libSystem et<> de matériel failures/b-affecting tels que des unités centrales de traitement,
+                commandes, mémoire, adapteurs de réseau, et alimentations d'énergie.< /li>
+        </ul>
+        <la capacité> de pThis de manipuler l'échec permet à des faisceaux de répondre à deux exigences qui sont typiques
+            dans la plupart des environnements du centre de calculs : </p>
+        <id= " ul_pr3_cnj_xgb " d'UL>
+            <capacité><> du libHigh<> availability/b-the de fournir à des utilisateurs l'accès à un service
+                pour un pourcentage élevé de temps et réduit les pannes non-programmées.< /li>
+            <capacité><> du libHigh<> reliability/b-the de réduire la fréquence de l'échec de système.< /li>
+        </ul>
+        
+        </conbody>
+    <connexe-liens>< ? le content= d'oxy-placeholder " ces liens représente des raccordements de matière-à-matière, ou des raccordements aux ressources de non-DITA-matière. « ? ></related-links>
+</concept>
