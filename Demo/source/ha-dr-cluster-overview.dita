@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="iq-bot-ha-dr-cluster-overview" xml:lang="en-US">
-    <title>HA cluster configuration overview</title>
+    <title>UPDATE HA cluster configuration overview</title>
     <shortdesc>To support <ph keyref="enterprise"/> your data center, configure an HA cluster.
         Follow your company methods and procedures for implementing your data center cluster. </shortdesc>
     <prolog>
