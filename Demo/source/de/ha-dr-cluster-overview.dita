@@ -1,0 +1,107 @@
+<? xml version= " 1.0 " encoding= " UTF-8 "?>
+<! DOCTYPE Konzept ÖFFENTLICHKEIT „- //OASIS//DTD DITA Concept//EN“ „concept.dtd“>
+<Konzept id= " IQ-BOT-ha-Dr-Blocküberblick " xml: lang= " EnUS ">
+    <titleHA> Blockkonfiguration überblick</Titel>
+    <shortdescTo> Unterstützungs <ph keyref= " Unternehmen"/> Ihr Rechenzentrum, bauen einen ha Block zusammen.
+        Folgen Sie Ihren Firmamethoden und -verfahren für das Einführen Ihres Rechenzentrumblockes. </shortdesc>
+    <Einleitung>
+        <authorAutomation> überall</Autor>
+        <Autor type= " Mitwirkender "> bethany.kanui/author<>
+        <critdates>
+            <verursachtes date= " 2019-02-19 "/>
+            <! -- Aktualisieren Sie das korrigierte critdate für änderungen anders als Typos -->
+            <korrigiertes modified= " 2019-02-19 "/>
+            <! --bethany.kanui-->
+            <korrigiertes modified= " 2019/05/07 "/>
+            <! --bethany.kanui-->
+            <korrigiertes modified= " 2019/05/08 "/>
+            <! --bethany.kanui-->
+            <korrigiertes modified= " 2019/05/09 "/>
+            <! --bethany.kanui-->
+            <korrigiertes modified= " 2019/05/13 "/>
+        </critdates>
+        <Metadaten>
+            <Schlüsselwörter>
+                <indextermHAindextermprocesses/indexterm/indexterm><><><>
+                <indextermclusterindextermprocesses/indexterm/indexterm><><><>
+            </keywords>
+        </metadata>
+        <resourceid id= " IQ-BOT-ha-Dr-Blocküberblick ">< /resourceid>
+    </prolog>
+    <conbody>
+        <pHA> Blöcke schützen Dienstleistungen und
+            Daten im Falle eines Bediener- oder Service-Ausfalls. Das folgende ist eine Liste von Prozessen
+            verbunden mit Blöcken. <ul id= " ul_pxl_mgk_chb ">
+                <libDatabase><> replication/b-Configure<> synchrone Reproduktion zwischen
+                    Primäraufstellungsort (aktiv) und Sekundäraufstellungsort (passive) sicherzustellen Bediener DES MS SQL
+                    übereinstimmung im Falle eines Datenbanknullpunktausfalls. </li>
+                <libDowntime/b-The><><> Menge der Stillstandszeit hängt von der Zahl Wiederanlauf Versuchen ab
+                    der Verwalter baut für die Primärbedienerdienstleistungen, die Zahl von zusammen
+                    failovers ließen pro Zahl von Stunden und die failback Konfiguration.< /li>
+                <libFailback/b-After><><> der Primärbediener wird zum Normal, die Arbeitsbelastung kann zurückgebracht
+                    seien zurück von den Sekundärbedienern zu den Primärbedienern ausgefallen Sie. Das Primär
+                    Bediener wird die aktiven Betriebe des Bedieners<> again.pRestoring zum Primär
+                        System oder Aufstellungsort nach einer failover oder Unfallwiederaufnahme auf einem Sekundärsystem
+                        oder Aufstellungsort. </p/li><>
+                <libFailover/b-If><><> eins der Primärbediener fällt aus, die Arbeitsbelastung von verlassen
+                    Bediener verschiebt automatisch sich auf den Sekundärbediener im Block. Dieses
+                    automatischer Prozeß wird failover genannt. Failover stellt ununterbrochene Verwendbarkeit sicher
+                    von den Anwendungen und von den Daten. Wenn failover durchführt, wird der Sekundärbediener
+                    der aktive Bediener. <pWhen> a (Primär) System ermittelt eine Störung oder einen Ausfall, es
+                        bringt automatisch Steuerung auf a (Sekundär) doppeltes System. Dieses
+                        nach trifft auf ha Blöcke zu, denen failover von einem Bediener ist
+                    andere.< /p/li><>
+                <libGraceful><> degradation/b-Process,<> Blockabhängigkeiten funktionieren lassend
+                    würdevoll auf einem verminderten Primäraufstellungsort.< /li>
+                <libRedundancy/b-HA><><> Blöcke verwenden Redundanz, um einzelne Punkte des Ausfalls zu verhindern
+                    (SPOF), wie ein verlassener Bediener oder ein Service. Ha Blöcke schließen Primär mit ein (aktiv)
+                    Bediener die Wirt Dienstleistungen oder Datenbanken und Sekundär (passive) Bediener das
+                    bewirten Sie wiederholte Kopien der Dienstleistungen und der Datenbanken. </li>
+                <libReplication/b-The><><> Sekundärbediener haben die gleiche Konfiguration und
+                    Software als die Primärbediener, sind sie ein Duplikat (überflüssige Kopie) von
+                    hauptsächlich. Daten werden (kopiert) von den Primärbedienern zum Sekundär wiederholt
+                    Bediener. </li>
+            </ul/p><>
+        <Zapfwellenantrieb> Unterstützung ha und Dr für <pH keyref= " Unternehmen"/>, bauen die vorgewählten Bestandteile innen zusammen
+            Ihr Rechenzentrum für ha.< /p>
+        <ul id= " ul_tpw_t44_bhb "> 
+            <libCluster><> components/b-A<> Block ist Bediener eines Satzes (Nullpunkte) die vorbei angeschlossen werden
+                körperliche Kabel und Software. In einem ha Klima sind diese Blöcke der Bediener
+                im gleichen körperlichen Rechenzentrum sein dürfen. <p>
+                    <noteIn> der Kontext der Blöcke, zwar die Bezeichnungen Bediener, Wirt und Nullpunkt jeder
+                        haben Sie spezifische Bedeutung, sie sind häufig verwendetes austauschbar.< /note>
+                </pul>< id= " ul_a4m_shs_xgb ">
+                    <libCluster><> Gruppe (Rolle)< /b-Group> der gesammelten Dienstleistungen die failover
+                        zusammen und seien Sie von einander abhängig. </li>
+                    <libHost/b-The><><> Blockmaschine, die die Dienstleistungen. /li< bewirtet>
+                    <libNode/b-A><><> generische Bezeichnung für eine Maschine in einem Block.< /li>
+                    <libPrimary><> node/b-The<> aktiver Nullpunkt im Block. Die Maschine wo
+                        Produktion Tätigkeiten Durchlauf. </li>
+                    <libSecondary><> node/b-The<> Maschine, die als das Ziel in gekennzeichnet wird
+                        Fall eines failover. Der Sekundärnullpunkt ist ein passives Duplikat von
+                        Primärnullpunkt. </li>
+                    <libServer/b-The><><> Maschine im Block angebracht mit dem Bedienerfunktionieren
+                        System.< /li>
+                </ul/li><>
+            <libResource><> Version Steuerung (VCS oder SVN)< /b/li><>
+        </ul>
+        <pHA> Blocktechnologien schützen gegen drei spezifische Arten Ausfälle: </p>
+        <ul id= " ul_ehy_dnj_xgb ">
+            <libApplication><> und des Services failures/b-affecting<> Anwendersoftware und wesentliches
+                Dienstleistungen.< /li>
+            <libSite><> Ausfälle im multisite organizations/b-caused<> durch Naturkatastrophen, Energie
+                Störungen oder Konnektivitätstörungen.< /li>
+            <libSystem><> und der Kleinteile failures/b-affecting<> Hardwareeinheiten wie CPUs,
+                Antriebe, Gedächtnis, Netzadapter und Spg.Versorgungsteile.< /li>
+        </ul>
+        <pThis> Fähigkeit, Ausfall anzufassen läßt Blöcke zwei Anforderungen entsprechen, die typisch sind
+            in den meisten Rechenzentrumklimas: </p>
+        <ul id= " ul_pr3_cnj_xgb ">
+            <libHigh><> availability/b-the<> Fähigkeit, Endbenutzer mit Zugang zu einem Service zu versehen
+                für einen hohen Prozentsatz der Zeit und verringert ungeplante Störungen.< /li>
+            <libHigh><> reliability/b-the<> Fähigkeit, die Frequenz des Systemfehlers. /li< zu verringern>
+        </ul>
+        
+        </conbody>
+    <In Verbindung stehendverbindungen><? oxy-placeholder content= " diese Verbindungen stellt Thema-zuthema Anschlüsse oder Anschlüsse zu den Nicht-DITAthema Betriebsmitteln dar. „? ></related-links>
+</concept>
