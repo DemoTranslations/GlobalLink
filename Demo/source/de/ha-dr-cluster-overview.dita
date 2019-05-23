@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="iq-bot-ha-dr-cluster-overview" xml:lang="en-US">
     <title>Ha Block-Konfiguration überblick</title>
-    <shortdesc>Sich stützen <ph keyref="enterprise"/> Ihr Rechenzentrum, bauen einen ha Block zusammen.
+    <shortdesc>AUTOMATISIERUNG ÜBERALL AKTUALISIEREN 1, um sich zu stützen <ph keyref="enterprise"/> Ihr Rechenzentrum, bauen einen ha Block zusammen.
         Folgen Sie Ihren Firmamethoden und -verfahren für das Einführen Ihres Rechenzentrumblockes. </shortdesc>
     <prolog>
         <author>Automatisierung überall</author>
@@ -91,7 +91,7 @@
                 Dienstleistungen.</li>
             <li><b>Aufstellungsortausfälle in den multisite Organisationen</b>- verursacht durch Naturkatastrophen, Energie
                 Störungen oder Konnektivitätstörungen.</li>
-            <li><b>System und Kleinteilausfälle</b>- Hardwareeinheiten wie CPUs beeinflussend,
+            <li><b>System und Kleinteilausfälle</b>- Beeinflussen der Hardwareeinheiten wie CPUs,
                 Antriebe, Gedächtnis, Netzadapter und Spg.Versorgungsteile.</li>
         </ul>
         <p>Diese Fähigkeit, Ausfall anzufassen läßt Blöcke zwei Anforderungen entsprechen, die typisch sind
