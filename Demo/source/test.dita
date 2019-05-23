@@ -26,7 +26,7 @@
                 <indexterm>cluster<indexterm>processes</indexterm></indexterm>
             </keywords>
         </metadata>
-        <resourceid id="iq-bot-ha-dr-cluster-overview"></resourceid>
+        <resourceid id="iq-bot-ha-dr-cluster-osverview"></resourceid>
     </prolog>
     <conbody>
         <p>HA clusters protect services and
