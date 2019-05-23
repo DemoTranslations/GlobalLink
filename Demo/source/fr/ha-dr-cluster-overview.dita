@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="iq-bot-ha-dr-cluster-overview" xml:lang="en-US">
     <title>Vue d'ensemble de configuration de faisceau d'ha</title>
-    <shortdesc>Pour soutenir <ph keyref="enterprise"/> votre centre de calculs, configurent un faisceau d'ha.
+    <shortdesc>L'AUTOMATION N'IMPORTE OÙ METTENT À JOUR 1 pour soutenir <ph keyref="enterprise"/> votre centre de calculs, configurent un faisceau d'ha.
         Suivez vos méthodes et procédures de compagnie pour mettre en application votre faisceau du centre de calculs. </shortdesc>
     <prolog>
         <author>Automation n'importe où</author>
